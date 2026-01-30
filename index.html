@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nagadhanush Chiluveru - Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Background Animation -->
+    <div class="fixed-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
     <!-- Menu================================================== -->
     <nav id="art-menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collasped">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collasped">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -38,83 +50,84 @@
     </nav>
 
 
-  <!-- Hero Section -->
-<section id="home" class="hero-section">
-  <div class="layer">
-    <div class="container d-flex justify-content-center align-items-center flex-column text-center">
-      <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="layer">
+            <div class="container d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
 
-        <h1 class="hero-title">
-          <span class="greeting">Hello, I'm</span>
-          <strong class="name-highlight">Nagadhanush Chiluveru</strong>
-        </h1>
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <strong class="name-highlight">Nagadhanush Chiluveru</strong>
+                    </h1>
 
-        <p class="hero-subtitle">
-          <span id="typing"></span>
-        </p>
+                    <p class="hero-subtitle">
+                        <span id="typing"></span>
+                    </p>
 
-        <p class="hero-description">
-          Specializing in <span class="highlight-text">Machine Learning</span> & 
-          <span class="highlight-text">Data Analytics</span>
-        </p>
+                    <p class="hero-description">
+                        Specializing in <span class="highlight-text">Machine Learning</span> &
+                        <span class="highlight-text">Data Analytics</span>
+                    </p>
 
-        <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
-          <div class="stat-item">
-            <div class="stat-number">5+</div>
-            <div class="stat-label">Projects</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">50+</div>
-            <div class="stat-label">Students Taught</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">2</div>
-            <div class="stat-label">Internships</div>
-          </div>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Students Taught</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        <a href="Nagadhanush_Chiluveru_1.pdf" download class="btn btn-secondary">Download CV</a>
+                    </div>
+
+                    <div class="social-icons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="https://github.com/yourgithub" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a href="mailto:yourmail@gmail.com"><i class="fa fa-envelope"></i></a>
+                    </div>
+
+                    <div class="hero-scroll" data-aos="fade-up" data-aos-delay="500">
+                        <a href="#about" class="scroll-indicator">
+                            <span>Scroll Down</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- End Hero Section -->
 
-        <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Get In Touch</a>
-          <a href="resume3.pdf" download class="btn btn-secondary">Download CV</a>
-        </div>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed("#typing", {
+            strings: ["Passionate Computer Science Student", "Machine Learning Enthusiast", "Full-Stack Developer", "Data Analyst"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
 
-        <div class="social-icons" data-aos="fade-up" data-aos-delay="400">
-          <a href="https://github.com/yourgithub" target="_blank"><i class="fa fa-github"></i></a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="mailto:yourmail@gmail.com"><i class="fa fa-envelope"></i></a>
-        </div>
-
-        <div class="hero-scroll" data-aos="fade-up" data-aos-delay="500">
-          <a href="#about" class="scroll-indicator">
-            <span>Scroll Down</span>
-            <i class="fa fa-angle-down"></i>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Hero Section -->
-
-<!-- Typed.js -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  var typed = new Typed("#typing", {
-    strings: ["Passionate Computer Science Student", "Machine Learning Enthusiast", "Full-Stack Developer", "Data Analyst"],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop: true
-  });
-</script>
-
-<!-- AOS.js -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <!-- AOS.js -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 
@@ -143,14 +156,21 @@
                     <div class="about-content">
                         <div class="about-intro">
                             <h3>Hello, I'm <span class="text-gradient">Nagadhanush Chiluveru</span></h3>
-                            <p class="lead-text">A passionate Computer Science Engineering student dedicated to innovation in technology.</p>
+                            <p class="lead-text">A passionate Computer Science Engineering student dedicated to
+                                innovation in technology.</p>
                         </div>
-                        
+
                         <div class="about-details">
-                            <p>I am an undergraduate Computer Science Engineering student specializing in <strong>Machine Learning</strong> and <strong>Data Analytics</strong>. My journey in technology is driven by a passion for solving complex problems and creating impactful solutions.</p>
-                            
-                            <p>Recently, I served as a <strong>Teaching Assistant for Data Structures & Algorithms</strong> using JavaScript, where I mentored over 50 students. This experience reinforced my love for both learning and teaching.</p>
-                            
+                            <p>I am an undergraduate Computer Science Engineering student specializing in
+                                <strong>Machine Learning</strong> and <strong>Data Analytics</strong>. My journey in
+                                technology is driven by a passion for solving complex problems and creating impactful
+                                solutions.
+                            </p>
+
+                            <p>Recently, I served as a <strong>Teaching Assistant for Data Structures &
+                                    Algorithms</strong> using JavaScript, where I mentored over 50 students. This
+                                experience reinforced my love for both learning and teaching.</p>
+
                             <div class="expertise-grid">
                                 <div class="expertise-item">
                                     <i class="fa fa-code"></i>
@@ -174,7 +194,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="skills-section">
                             <h4>Technical Proficiency</h4>
                             <div class="skill-item">
@@ -225,7 +245,8 @@
         <div class="row">
             <div class="col-xs-12 text-center">
                 <blockquote>
-                    "It's not at all important to get it right the first time. It's vitally important to get it right the last time."
+                    "It's not at all important to get it right the first time. It's vitally important to get it right
+                    the last time."
                 </blockquote>
                 <div class="joinjour text-center">
                     <a href="#contact" class="btn btn-block scroll-nav">Contact Me Now</a>
@@ -244,24 +265,41 @@
             <div class="gap"></div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="exp-card">
-                        <h4>Teaching Assistant — IFS, KMIT</h4>
-                        <small style="color: var(--secondary-color); font-weight: 500;">April 2024 – May 2024</small>
-                        <ul>
-                            <li>Conducted mentoring sessions on Data Structures & Algorithms in JavaScript for 50+ students.</li>
-                            <li>Assisted in creating and evaluating coding assessments, ensuring fair grading and feedback delivery.</li>
-                            <li>Provided one-on-one guidance to students, improving their problem-solving techniques and coding efficiency.</li>
-                        </ul>
-                    </div>
+                    <div class="timeline-wrapper">
+                        <div class="exp-card">
+                            <h4>Software Developer Intern (Backend & AI) — NNIIT</h4>
+                            <small style="color: var(--secondary-color); font-weight: 500;">Sept 2025 – Present</small>
+                            <ul>
+                                <li>Architected and deployed a full-stack AI calling agent using React, Node.js, and
+                                    Express.js, integrating VAPI for automated feedback workflows and supporting 25+
+                                    concurrent calls with JWT-secured authentication.</li>
+                                <li>Implemented real-time RAG-based transcript analysis for live meetings, enabling
+                                    semantic
+                                    search, topic extraction, and Q&A insights while reducing external LLM API costs by
+                                    90%
+                                    through optimized retrieval and batching strategies.</li>
+                                <li>Developed contact and campaign management modules with CSV import/export, automated
+                                    call
+                                    logging, and analytics dashboards to streamline tracking and operational reporting.
+                                </li>
+                                <li>Designed and optimized RESTful APIs for Career Pages and internal services; applied
+                                    query based retrieval and lazy loading to reduce data load time by 50%.</li>
+                                <li>Structured a modular monolithic backend architecture, improving scalability,
+                                    maintainability, and overall system performance.</li>
+                            </ul>
+                        </div>
 
-                    <div class="exp-card">
-                        <h4>60-Day Virtual Internship — KultureHire</h4>
-                        <small style="color: var(--secondary-color); font-weight: 500;">Data Analytics</small>
-                        <ul>
-                            <li>Worked on simulated business data sets, performing data cleaning, exploratory analysis, and deriving insights.</li>
-                            <li>Created interactive visualizations and dashboards to summarize business KPIs using tools like Matplotlib and Seaborn.</li>
-                            <li>Delivered weekly progress reports and presentations showcasing actionable insights to mentors and peers.</li>
-                        </ul>
+                        <div class="exp-card">
+                            <h4>Teaching Assistant — IFS, KMIT</h4>
+                            <small style="color: var(--secondary-color); font-weight: 500;">Apr 2024 – May 2024</small>
+                            <ul>
+                                <li>Mentored 10+ students in data structures, algorithms, and problem-solving
+                                    techniques.
+                                </li>
+                                <li>Conducted doubt-clearing sessions and supported coding assessments to improve
+                                    performance and optimization skills.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -281,7 +319,8 @@
                     <div class="project-card">
                         <img src="flipkartchatbot.png" alt="Flipkart Chatbot Project" />
                         <h4>Flipkart Chatbot</h4>
-                        <p>Developed a customer support chatbot using LLM and Retrieval-Augmented Generation (RAG) with Python and Flask.</p>
+                        <p>Developed a customer support chatbot using LLM and Retrieval-Augmented Generation (RAG) with
+                            Python and Flask.</p>
                         <a href="https://github.com/nagadhanush23" target="_blank" class="btn btn-block">GitHub Repo</a>
                     </div>
                 </div>
@@ -289,7 +328,8 @@
                     <div class="project-card">
                         <img src="dataanylsis.png" alt="Data Science Job Analysis Project" />
                         <h4>Data Science Job Analysis (UK)</h4>
-                        <p>Analyzed job trends, salary patterns, and in-demand skills in the UK data science market using Pandas, Matplotlib, and Seaborn.</p>
+                        <p>Analyzed job trends, salary patterns, and in-demand skills in the UK data science market
+                            using Pandas, Matplotlib, and Seaborn.</p>
                         <a href="https://github.com/nagadhanush23" target="_blank" class="btn btn-block">GitHub Repo</a>
                     </div>
                 </div>
@@ -297,7 +337,8 @@
                     <div class="project-card">
                         <img src="twitter.png" alt="Twitter Sentiment Analysis Project" />
                         <h4>Twitter Sentiment Analysis</h4>
-                        <p>Collected real-time tweets and classified sentiments using Tweepy, TextBlob, and Matplotlib.</p>
+                        <p>Collected real-time tweets and classified sentiments using Tweepy, TextBlob, and Matplotlib.
+                        </p>
                         <a href="https://github.com/nagadhanush23" target="_blank" class="btn btn-block">GitHub Repo</a>
                     </div>
                 </div>
@@ -319,7 +360,8 @@
                         <h4>Data Analytics and Visualization Job Simulation — Forage & Accenture</h4>
                         <ul>
                             <li>Completed a business-focused data analysis simulation for a global client scenario.</li>
-                            <li>Performed revenue performance analysis, customer segmentation, and dashboard creation.</li>
+                            <li>Performed revenue performance analysis, customer segmentation, and dashboard creation.
+                            </li>
                             <li>Applied Excel and Python data tools to solve real-world business challenges.</li>
                         </ul>
                     </div>
@@ -329,7 +371,8 @@
                         <ul>
                             <li>Worked on exploratory data analysis projects involving diverse business datasets.</li>
                             <li>Generated statistical reports and dashboards to interpret business trends.</li>
-                            <li>Enhanced skills in data wrangling, visualization, and presenting actionable insights.</li>
+                            <li>Enhanced skills in data wrangling, visualization, and presenting actionable insights.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -347,7 +390,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="lead">Download my resume to learn more about my skills and experiences.</p>
-                    <a href="resume3.pdf" download target="_blank" class="btn btn-block resume-btn">Download Resume</a>
+                    <a href="Nagadhanush_Chiluveru_1.pdf" download target="_blank"
+                        class="btn btn-block resume-btn">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -365,7 +409,8 @@
                     <p class="lead">Feel free to reach out for collaborations or inquiries.</p>
                     <p class="address">
                         Email: <a href="mailto:nagadhanush23@gmail.com">nagadhanush23@gmail.com</a><br>
-                        LinkedIn: <a href="https://linkedin.com/in/nagadhanushch" target="_blank">linkedin.com/in/nagadhanush23</a>
+                        LinkedIn: <a href="https://linkedin.com/in/nagadhanushch"
+                            target="_blank">linkedin.com/in/nagadhanush23</a>
                     </p>
                     <form id="contact-form" action="mailto:nagadhanush23@gmail.com" method="POST" enctype="text/plain">
                         <input type="text" name="name" placeholder="Your Name" required>
@@ -386,8 +431,10 @@
             <div class="social-icons">
                 <ul>
                     <li><a href="mailto:nagadhanush23@gmail.com" title="Email"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="https://linkedin.com/in/nagadhanushch" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/nagadhanush23" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com/in/nagadhanushch" target="_blank" title="LinkedIn"><i
+                                class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/nagadhanush23" target="_blank" title="GitHub"><i
+                                class="fa fa-github"></i></a></li>
                 </ul>
             </div>
             <div class="footer-bottom">
@@ -400,7 +447,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
         // Smooth scroll for navigation
-        $(document).on('click', '.scroll-nav', function(e) {
+        $(document).on('click', '.scroll-nav', function (e) {
             var target = $(this).attr('href');
             if (target.startsWith('#')) {
                 e.preventDefault();
@@ -411,7 +458,7 @@
         });
 
         // Navbar background on scroll
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
             if ($(window).scrollTop() > 50) {
                 $('#art-menu').addClass('on');
             } else {
@@ -420,4 +467,5 @@
         });
     </script>
 </body>
+
 </html>
